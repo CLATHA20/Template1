@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +10,14 @@
     body
         {
          justify-content: center;
-         margin:15px 120px;
+         margin: auto;
         }
-        
-    .container1 .content {
+
+        img{
+          display: inline;
+        }
+    
+    .container.content {
          position:absolute;
          top:100px;
          right: 450px;
@@ -21,95 +25,123 @@
          padding: 5px;
          width:500px;
      }
-     ul{
-        display: flex;
-         justify-content: center;
+
+     h4{
+       margin-top: 10px;
+       margin-bottom: 10px;
      }
-     li {
-         list-style: none;
-         margin-right: 20px;
-     }
-     .card1 .card2{
-          margin: auto;
-          display:inline;
-      } 
-     
+    
       .button {
-       background-color: #4CAF50; /* Green */
+       background-color:cyan /* Green */
        border: none;
        color: white;
        padding: 5px;
        text-align: center;
        text-decoration: none;
        display: inline-block;
-       font-size: 10px;
+       font-size: 16px;
        margin: 4px 2px;
        cursor: pointer;
        }
-       .button1 {border-radius: 27px;}
-       .button2 {border-radius: 27px;
-       margin-left: 30%;
+       .button1 {border-radius: 20px;}
+       .button2 {border-radius: 35px;}
+       .btn2{
+         background-color:mediumaquamarine;
+         padding:12px;
+         padding-left: 30px;
+         padding-right: 30px;
+         font-size: 16px;
        }
-      
+       .btn{
+         background-color:mediumaquamarine;
+         padding: 8px 20px;
+	    }
+     
+     .done{
+       width: 40%;
+     }
+
   </style>
 
 </head>
 <body>
-    <div>
-<div class="container1">
-  <img src="autumn1.jpg" style="width:90%; height:500px;position:relative;margin: auto;">
+    
+<div class="container">
+  <img src="autumn1.jpg"></div>
   <div class="content">
-    <h1 class="first" style="font-style: oblique;text-align: center;">Elexa</h1>
-    <ul><li>Home</li>
+  <img src="logo.jpeg" alt="logo" style="width:100px;height:90px;margin-top: 20px;">  
+  <ul class="list-inline"><li>Home</li>
         <li>Services</li>
         <li>Features</li>
         <li>Contact</li>
     </ul>
     <h1 class="sec" style="text-align: center;font-size: 50px;">HAVE A GOOD DAY</h1>
    <p class="one" style="padding: 0 10px;"> ---------------------JUST FOR YOU ON THEME FOREST-------------------</p>
-    <button class="button button2" style="margin-top: 15px;">GET YOUR COPY NOW</button>
+    <button class="button button2 btn2" style="margin-top: 15px;"><b>GET YOUR COPY NOW</b></button>
   </div>
   </div>
-  <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-              <a href="#" ><i class="fas fa-user-friends" style="text-align:center;display:block;font-size:30px;"></i></a>
-            <h2 class="header" style="font-size: 15px;">PROFESSIONALS</h2>
-            <p>Ut enim ad minim veniam, quis nostrud</p>
-            <p> exercitation ullamco laboris...</p>
+  
+  <div class="container" style="display:flex;">
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+        
+              <i class="fas fa-user-friends" style="text-align:center;display:block;font-size:30px;padding-top: 20px;color:mediumaquamarine;"></i></a>
+              <div class="caption">
+              <h5 class="text" style="text-align:center;">PROFESSIONAL</h5>
+                <p class="para"  style="text-align:center;">Lorem ipsum donec id </p>
+               <p class="para"  style="text-align:center;"> gravida at eget metus.</p>
+              </div>
           </div>
-          <div class="col-sm-4">
-            <a href="#" ><i class="far fa-heart" style="text-align:center;display:block;font-size:30px;"></i></a>
-            <h2 class="header" style="font-size: 15px;">AMATEURS</h2>
-            <p>Ut enim ad minim veniam, quis nostrud </p>
-            <p>exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+           <a href="#" ><i class="far fa-heart" style="text-align:center;display:block;font-size:30px;padding-top: 10px;color:mediumaquamarine;"></i></a>
+              <div class="caption">
+               <h5 class="text" style="text-align:center;">AMATEURS</h5>
+                <p class="para"  style="text-align:center;">Lorem ipsum donec id </p>
+                <p class="para"  style="text-align:center;"> gravida at eget metus.</p>
+              </div>
           </div>
-          <div class="col-sm-4">
-            <a href="#"><i class="fas fa-headphones-alt" style="text-align:center;display:block;font-size:30px;"></i> </a>      
-            <h2 class="header" style="font-size: 15px;">FOR EVERYONE</h2>
-            <p>Ut enim ad minim veniam, quis nostrud</p>
-              <p>exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+           <a href="#"> <i class="fas fa-headphones-alt" style="text-align:center;display:block;font-size:30px;padding-top: 10px;color:mediumaquamarine;"></i> </a>      
+              <div class="caption">
+              <h5 class="text" style="text-align:center;">FOR EVERYONE</h5>
+                <p class="para"  style="text-align:center;">Lorem ipsum donec id </p>
+                <p class="para"  style="text-align:center;">gravida at eget metus.</p>
+              </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="merge" style="display:flex;">
       <div class="container">
-            <div class="row" style="width: 50%;display:flex;">
-              <div class="card1">
-                  <img src="desert.jpeg" alt="desert" height="300px" width="500px">
-                <h3 class="header" style="font-size: 15px;">RESPONSIVE EMAIL TEMPLATE</h3>
-                <p>Ut enim ad minim veniam, quis nostrud </p>
-               <p>exercitation ullamco laboris...</p> 
-               <button class="button button1" style="margin-top: 15px;">Read more</button>
-              </div>
-              <div class="card2" style="margin-left: 40px;">
-                <img src="beach.jpg" alt="beach" height="300px" width="500px">
-                <h3 class="header" style="font-size: 15px;">RESPONSIVE EMAIL TEMPLATE</h3>
+                <img src="desert.jpeg" alt="desert" class="img-thumbnail" height="236" width="215">
+                <h5><b>RESPONSIVE EMAIL TEMPLATE</b></h5>
+      </div>
+               
+      <div class="container">
+                <img src="beach.jpg" alt="beach" class="img-thumbnail" width="215" height="236">
+                <h5><b>RESPONSIVE EMAIL TEMPLATE</b></h5>
+    </div>
+          <div class="container">
+              <div class="well done">
+                  <p>Ut enim ad minim veniam, quis nostrud </p>
+                  <p>exercitation ullamco laboris...</p> 
+                   <button class="button button1 btn" style="margin-top: 15px;">Read more</button>
+                </div>
+            </div>
+      
+          <div class="container">
+              <div class="well done">
                 <p>Ut enim ad minim veniam, quis nostrud </p>
                 <p>exercitation ullamco laboris...</p> 
-                <button class="button button1" style="margin-top: 15px;">Read more</button>  
+                <button class="button button1 btn" style="margin-top: 15px;">Read more</button>  
               </div>
-            </div>
           </div>
-          
+      
 </body>
 </html>
